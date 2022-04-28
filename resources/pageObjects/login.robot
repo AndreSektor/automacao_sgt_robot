@@ -1,13 +1,13 @@
-** Settings ***
+*** Settings ***
 Library     SeleniumLibrary
 Resource    ../elements/loginElements.robot
 Resource    ../../usuarioDN/usuario.robot
 Resource    ../elements/dashboardElements.robot
 
 *** Variables ***
-${browser}       headlessfirefox
+${browser}       firefox 
 ${url}           https://qa.newsgt.isitics.com/#/
-${log-null}      geckodriver.log=null
+${log-null}      service_log_path=${{os.path.devnull}}
 
 *** Keywords ***
 Abrir Navegador
@@ -70,6 +70,7 @@ Então devo validar as mensagems Campo obrigatório
     Wait Until Page Contains          text=${Msg-Email}
     Wait Until Element Is Visible     locator=${Span-Senha}
     Wait Until Page Contains          text=${Msg-Email} 
+    
 
 
 

@@ -1,104 +1,332 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220419 12:07:39.868" rpa="false" schemaversion="3">
-<suite id="s1" name="loginSuportStep" source="C:\Users\andreluis.silva\robotFrameWork\SGT-ROBOT\test\loginSuportStep.robot">
-<test id="s1-t1" name="Cenário 1: Login Suporte Usuário Ativo" line="14">
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220427 11:45:58.946" rpa="false" schemaversion="3">
+<suite id="s1" name="indicadoresIsisStep" source="C:\Users\andreluis.silva\robotFrameWork\SGT-ROBOT\automacao_sgt_robot\test\indicadoresIsisStep.robot">
+<test id="s1-t1" name="Cenário 1: Sucesso do Negócio" line="13">
 <kw name="Abrir Navegador" library="login" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <arg>${log-null}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220419 12:07:40.070" level="INFO">Opening browser 'headlessfirefox' to base url 'https://qa.newsgt.isitics.com/#/'.</msg>
-<msg timestamp="20220419 12:07:40.071" level="INFO">Firefox driver log is always forced to to: C:\Users\andreluis.silva\robotFrameWork\SGT-ROBOT\test\geckodriver-3.log</msg>
-<status status="PASS" starttime="20220419 12:07:40.070" endtime="20220419 12:07:50.763"/>
+<msg timestamp="20220427 11:45:59.153" level="INFO">Opening browser 'firefox' to base url 'https://qa.newsgt.isitics.com/#/'.</msg>
+<msg timestamp="20220427 11:45:59.155" level="INFO">Firefox driver log is always forced to to: C:\Users\andreluis.silva\robotFrameWork\SGT-ROBOT\automacao_sgt_robot\test\geckodriver-17.log</msg>
+<status status="PASS" starttime="20220427 11:45:59.153" endtime="20220427 11:46:12.366"/>
 </kw>
-<status status="PASS" starttime="20220419 12:07:40.070" endtime="20220419 12:07:50.763"/>
+<status status="PASS" starttime="20220427 11:45:59.153" endtime="20220427 11:46:12.366"/>
 </kw>
+<kw name="Dado que estou logado como usuario UO administrador" library="indicadoresIsis">
 <kw name="Dado que estou no menu dashboard" library="loginSuport">
 <kw name="Dado que acesso a página do portal SGT" library="login">
 <kw name="Go To" library="SeleniumLibrary">
 <arg>url=${url}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220419 12:07:50.765" level="INFO">Opening url 'https://qa.newsgt.isitics.com/#/'</msg>
-<status status="PASS" starttime="20220419 12:07:50.765" endtime="20220419 12:07:50.774"/>
+<msg timestamp="20220427 11:46:12.369" level="INFO">Opening url 'https://qa.newsgt.isitics.com/#/'</msg>
+<status status="PASS" starttime="20220427 11:46:12.369" endtime="20220427 11:46:12.382"/>
 </kw>
 <kw name="Title Should Be" library="SeleniumLibrary">
 <arg>${Title}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<msg timestamp="20220419 12:07:50.779" level="INFO">Page title is 'SGT - Sistema de Gestão de Tecnologia'.</msg>
-<status status="PASS" starttime="20220419 12:07:50.774" endtime="20220419 12:07:50.780"/>
+<msg timestamp="20220427 11:46:12.393" level="INFO">Page title is 'SGT - Sistema de Gestão de Tecnologia'.</msg>
+<status status="PASS" starttime="20220427 11:46:12.382" endtime="20220427 11:46:12.393"/>
 </kw>
-<status status="PASS" starttime="20220419 12:07:50.764" endtime="20220419 12:07:50.780"/>
+<status status="PASS" starttime="20220427 11:46:12.369" endtime="20220427 11:46:12.394"/>
 </kw>
 <kw name="Quando preencho login e senha com usuário DN administrador" library="login">
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Modal-Login}</arg>
 <arg>${usuario}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220419 12:07:50.780" level="INFO">Typing text 'admin@teste.com' into text field '//input[@id='login']'.</msg>
-<status status="PASS" starttime="20220419 12:07:50.780" endtime="20220419 12:07:50.832"/>
+<msg timestamp="20220427 11:46:12.395" level="INFO">Typing text 'admin@teste.com' into text field '//input[@id='login']'.</msg>
+<status status="PASS" starttime="20220427 11:46:12.395" endtime="20220427 11:46:12.453"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${Modal-Senha}</arg>
 <arg>${senha}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220419 12:07:50.833" level="INFO">Typing text 'sgtcaveiras' into text field '//input[@id='senha']'.</msg>
-<status status="PASS" starttime="20220419 12:07:50.833" endtime="20220419 12:07:50.858"/>
+<msg timestamp="20220427 11:46:12.454" level="INFO">Typing text 'sgtcaveiras' into text field '//input[@id='senha']'.</msg>
+<status status="PASS" starttime="20220427 11:46:12.454" endtime="20220427 11:46:12.489"/>
 </kw>
-<status status="PASS" starttime="20220419 12:07:50.780" endtime="20220419 12:07:50.858"/>
+<status status="PASS" starttime="20220427 11:46:12.394" endtime="20220427 11:46:12.489"/>
 </kw>
 <kw name="E clico no botão Entrar" library="login">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>locator=${Btn-Entrar}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220419 12:07:50.858" level="INFO">Clicking element '//button[contains(.,'Entrar')]'.</msg>
-<status status="PASS" starttime="20220419 12:07:50.858" endtime="20220419 12:07:51.086"/>
+<msg timestamp="20220427 11:46:12.489" level="INFO">Clicking element '//button[contains(.,'Entrar')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:12.489" endtime="20220427 11:46:12.713"/>
 </kw>
-<status status="PASS" starttime="20220419 12:07:50.858" endtime="20220419 12:07:51.086"/>
+<status status="PASS" starttime="20220427 11:46:12.489" endtime="20220427 11:46:12.713"/>
 </kw>
 <kw name="Então devo ser redirecionado para o menu Dashboard de Atendimentos" library="login">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>timeout=15</arg>
 <arg>locator=${Tela-Dashboard}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220419 12:07:51.087" endtime="20220419 12:07:51.739"/>
+<status status="PASS" starttime="20220427 11:46:12.714" endtime="20220427 11:46:13.584"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>text=${Validar-Dashboard}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220419 12:07:51.739" endtime="20220419 12:07:51.743"/>
+<status status="PASS" starttime="20220427 11:46:13.584" endtime="20220427 11:46:13.590"/>
 </kw>
-<status status="PASS" starttime="20220419 12:07:51.086" endtime="20220419 12:07:51.743"/>
+<status status="PASS" starttime="20220427 11:46:12.714" endtime="20220427 11:46:13.591"/>
 </kw>
-<status status="PASS" starttime="20220419 12:07:50.764" endtime="20220419 12:07:51.743"/>
+<status status="PASS" starttime="20220427 11:46:12.368" endtime="20220427 11:46:13.591"/>
 </kw>
 <kw name="Então expando o menu sanduiche" library="loginSuport">
-<kw name="Wait Until Location Does Not Contain" library="SeleniumLibrary">
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>timeout=0:00:30</arg>
 <arg>locator=${Loading}</arg>
-<doc>Waits until the current URL does not contains ``location``.</doc>
-<status status="PASS" starttime="20220419 12:07:51.744" endtime="20220419 12:07:51.746"/>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20220427 11:46:13.591" endtime="20220427 11:46:37.365"/>
 </kw>
-<status status="PASS" starttime="20220419 12:07:51.744" endtime="20220419 12:07:51.746"/>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${Btn-Sanduich}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220427 11:46:37.365" endtime="20220427 11:46:37.392"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Btn-Sanduich}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:37.393" level="INFO">Clicking element '//button[contains(@aria-label,'Open drawer')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:37.392" endtime="20220427 11:46:37.624"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:13.591" endtime="20220427 11:46:37.624"/>
+</kw>
+<kw name="Então expando a aba configurações" library="loginSuport">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Btn-Configurações}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:37.625" level="INFO">Clicking element '//div[@class='MuiListItemText-root sgt-sidebar-text'][contains(.,'Configurações')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:37.624" endtime="20220427 11:46:37.851"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:37.624" endtime="20220427 11:46:37.852"/>
+</kw>
+<kw name="E clico no modal Login Suporte" library="loginSuport">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Span-LoginSuport}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:37.853" level="INFO">Clicking element '//span[contains(.,'Login Suporte')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:37.852" endtime="20220427 11:46:37.879"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:37.852" endtime="20220427 11:46:37.879"/>
+</kw>
+<kw name="Então confirmo se estou na página gerenciamento de Usuários" library="loginSuport">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=${Validar-LoginSuport-Tela}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220427 11:46:37.880" endtime="20220427 11:46:37.894"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>text=${Msg-LoginSuport}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220427 11:46:37.894" endtime="20220427 11:46:38.549"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:37.879" endtime="20220427 11:46:38.549"/>
+</kw>
+<kw name="E clico no modal busque por nome, login , perfil ou unidade" library="loginSuport">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Input-Buscar-LoginSuport}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:38.549" level="INFO">Clicking element '//input[contains(@placeholder,'busque por nome, login, perfil ou unidade')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:38.549" endtime="20220427 11:46:38.760"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:38.549" endtime="20220427 11:46:38.760"/>
+</kw>
+<kw name="E preencher o campo de pesquisa com nome de usuario" library="loginSuport">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>locator=${Input-Buscar-LoginSuport}</arg>
+<arg>text=${usuarioUO}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:38.761" level="INFO">Typing text 'SAMUEL ROMEIRO' into text field '//input[contains(@placeholder,'busque por nome, login, perfil ou unidade')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:38.760" endtime="20220427 11:46:38.783"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:38.760" endtime="20220427 11:46:38.783"/>
+</kw>
+<kw name="E clicar no lupa" library="loginSuport">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Btn-Pesquisar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:38.784" level="INFO">Clicking element '//button[contains(@class,'darkBlue icon-button')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:38.784" endtime="20220427 11:46:39.012"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:38.783" endtime="20220427 11:46:39.012"/>
+</kw>
+<kw name="Então fazer o login de usuário ativo" library="loginSuport">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Btn-Login}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:39.013" level="INFO">Clicking element '//button[contains(@class,'darkBlue basic-button')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:39.012" endtime="20220427 11:46:39.227"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:39.012" endtime="20220427 11:46:39.228"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:12.368" endtime="20220427 11:46:39.228"/>
+</kw>
+<kw name="Quando expando a aba de indicadores de ISIs" library="indicadoresIsis">
+<kw name="Então devo ser redirecionado para o menu Dashboard de Atendimentos" library="login">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>timeout=15</arg>
+<arg>locator=${Tela-Dashboard}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220427 11:46:39.230" endtime="20220427 11:46:39.900"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>text=${Validar-Dashboard}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220427 11:46:39.900" endtime="20220427 11:46:39.907"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:39.230" endtime="20220427 11:46:39.907"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>timeout=0:00:30</arg>
+<arg>locator=${Loading}</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20220427 11:46:39.907" endtime="20220427 11:46:41.420"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Btn-Sanduich}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:41.421" level="INFO">Clicking element '//button[contains(@aria-label,'Open drawer')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:41.421" endtime="20220427 11:46:41.651"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Btn-Indicadores-ISIs}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:41.651" level="INFO">Clicking element '(//div[contains(.,'Indicadores de ISIs')])[6]'.</msg>
+<status status="PASS" starttime="20220427 11:46:41.651" endtime="20220427 11:46:41.883"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:39.229" endtime="20220427 11:46:41.883"/>
+</kw>
+<kw name="E clico no modal Sucesso do Negócio" library="indicadoresIsis">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Span-SucessoNegocio}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:41.884" level="INFO">Clicking element '//span[contains(.,'Sucesso do Negócio')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:41.884" endtime="20220427 11:46:41.908"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:41.884" endtime="20220427 11:46:41.908"/>
+</kw>
+<kw name="Então devo visualizar a tela KPI List" library="indicadoresIsis">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>text=${Titulo-KPI-List}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220427 11:46:41.909" endtime="20220427 11:46:42.558"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>timeout=0:00:30</arg>
+<arg>locator=${Loading}</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20220427 11:46:42.558" endtime="20220427 11:46:43.438"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:41.909" endtime="20220427 11:46:43.438"/>
+</kw>
+<kw name="Então no campo Ano devemos selecionar 2019 e Aplicar" library="indicadoresIsis">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Modal-Ano}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:43.440" level="INFO">Clicking element '//div[contains(@aria-labelledby,'ano')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:43.439" endtime="20220427 11:46:44.159"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Ano-2019}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:44.159" level="INFO">Clicking element '//li[@class='MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button'][contains(.,'2019')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:44.159" endtime="20220427 11:46:44.408"/>
+</kw>
+<kw name="Page Should Contain Button" library="SeleniumLibrary">
+<arg>locator=${Btn-Aplicar}</arg>
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<msg timestamp="20220427 11:46:44.440" level="INFO">Current page contains button '//button[@class='darkBlue basic-button'][contains(.,'Aplicar')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:44.408" endtime="20220427 11:46:44.440"/>
+</kw>
+<kw name="Click Element At Coordinates" library="SeleniumLibrary">
+<arg>locator=${Btn-Aplicar}</arg>
+<arg>xoffset=46</arg>
+<arg>yoffset=22</arg>
+<doc>Click the element ``locator`` at ``xoffset/yoffset``.</doc>
+<msg timestamp="20220427 11:46:44.441" level="INFO">Clicking element '//button[@class='darkBlue basic-button'][contains(.,'Aplicar')]' at coordinates x=46, y=22.</msg>
+<status status="PASS" starttime="20220427 11:46:44.441" endtime="20220427 11:46:44.991"/>
+</kw>
+<kw name="Wait Until Page Does Not Contain Element" library="SeleniumLibrary">
+<arg>timeout=0:00:30</arg>
+<arg>locator=${Loading}</arg>
+<doc>Waits until the element ``locator`` disappears from the current page.</doc>
+<status status="PASS" starttime="20220427 11:46:44.991" endtime="20220427 11:46:44.994"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:43.439" endtime="20220427 11:46:44.994"/>
+</kw>
+<kw name="Então entrar no indicador Receita total de STI (declaratório Futuro)" library="indicadoresIsis">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${Span-RTdeSTI}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220427 11:46:44.995" endtime="20220427 11:46:45.008"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Span-RTdeSTI}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:45.009" level="INFO">Clicking element '//td[@class='MuiTableCell-root MuiTableCell-body'][contains(.,'Imagem &amp; Reputação / Sustentabilidade Financeira')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:45.009" endtime="20220427 11:46:45.265"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Futuro22}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:45.265" level="INFO">Clicking element '(//input[contains(@type,'text')])[1]'.</msg>
+<status status="PASS" starttime="20220427 11:46:45.265" endtime="20220427 11:46:45.485"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Futuro23}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:45.485" level="INFO">Clicking element '(//input[contains(@type,'text')])[2]'.</msg>
+<status status="PASS" starttime="20220427 11:46:45.485" endtime="20220427 11:46:45.719"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Bom}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:45.719" level="INFO">Clicking element '(//span[contains(@class,'checkmark')])[1]'.</msg>
+<status status="PASS" starttime="20220427 11:46:45.719" endtime="20220427 11:46:45.968"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Regular}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:45.968" level="INFO">Clicking element '(//span[contains(@class,'checkmark')])[2]'.</msg>
+<status status="PASS" starttime="20220427 11:46:45.968" endtime="20220427 11:46:46.203"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Ruim}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:46.204" level="INFO">Clicking element '(//span[contains(@class,'checkmark')])[3]'.</msg>
+<status status="PASS" starttime="20220427 11:46:46.203" endtime="20220427 11:46:46.435"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=${Comentarios}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220427 11:46:46.436" level="INFO">Clicking element '//textarea[contains(@class,' ')]'.</msg>
+<status status="PASS" starttime="20220427 11:46:46.436" endtime="20220427 11:46:46.669"/>
+</kw>
+<status status="PASS" starttime="20220427 11:46:44.995" endtime="20220427 11:46:46.669"/>
 </kw>
 <kw name="Fechar Navegador" library="login" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220419 12:07:51.747" endtime="20220419 12:07:52.351"/>
+<status status="PASS" starttime="20220427 11:46:46.670" endtime="20220427 11:46:47.362"/>
 </kw>
-<status status="PASS" starttime="20220419 12:07:51.747" endtime="20220419 12:07:52.352"/>
+<status status="PASS" starttime="20220427 11:46:46.670" endtime="20220427 11:46:47.363"/>
 </kw>
-<status status="PASS" starttime="20220419 12:07:40.069" endtime="20220419 12:07:52.352"/>
+<tag>Sucesso do Negócio</tag>
+<status status="PASS" starttime="20220427 11:45:59.152" endtime="20220427 11:46:47.363"/>
 </test>
-<status status="PASS" starttime="20220419 12:07:39.870" endtime="20220419 12:07:52.354"/>
+<status status="PASS" starttime="20220427 11:45:58.947" endtime="20220427 11:46:47.365"/>
 </suite>
 <statistics>
 <total>
 <stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">Sucesso do Negócio</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="loginSuportStep">loginSuportStep</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="indicadoresIsisStep">indicadoresIsisStep</stat>
 </suite>
 </statistics>
 <errors>
