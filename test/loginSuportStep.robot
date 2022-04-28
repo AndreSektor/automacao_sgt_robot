@@ -12,6 +12,7 @@ Library             SeleniumLibrary
 # Para poder fazer login suporte em um usuário
 
 Cenário 1: Login Suporte Usuário Ativo
+<<<<<<< HEAD
     [Tags]                  Login suporte
     Dado que estou no menu dashboard
     Então expando o menu sanduiche  
@@ -24,6 +25,19 @@ Cenário 1: Login Suporte Usuário Ativo
     Então confirmo a tela com usuarios do SGT
     Então fazer o login de usuário ativo
     E checar usuario logado
+=======
+    Dado que estou no menu dashboard
+    Então expando o menu sanduiche  
+    # Então expando a aba configurações 
+    # E clico no modal Login Suporte
+    # Então confirmo se estou na página gerenciamento de Usuários
+    # E clico no modal busque por nome, login , perfil ou unidade 
+    # E preencher o campo de pesquisa com nome de usuario
+    # E clicar no lupa
+    # Então confirmo a tela com usuarios do SGT
+    # Então fazer o login de usuário ativo
+    # E checar usuario logado
+>>>>>>> f21e76e57291d9ee49107faedc3adc2809f13d22
     # E clicar no botão logout
 
 # Cenário: loginSuporteUsuarioInitivo
