@@ -6,6 +6,7 @@ Resource        ../elements/dashboardElements.robot
 Resource        ../elements/loginSuportElements.robot
 Resource        ../../usuarioUO/usuarioUO.robot
 
+<<<<<<< HEAD
 
 # *** Variables ***
 # ${browser}       firefox
@@ -13,6 +14,8 @@ Resource        ../../usuarioUO/usuarioUO.robot
 # ${log-null}      service_log_path=${{os.path.devnull}}
 
 
+=======
+>>>>>>> ce8f27ce941c147d92aeaa4389dbcc7ba7e780bb
 *** Keywords ***
 
 Dado que estou no menu dashboard

@@ -1,8 +1,16 @@
 *** Settings ***
 Library         SeleniumLibrary
+<<<<<<< HEAD
 Resource        ../elements/usuariosElements.robot
 Resource        loginSuport.robot
 Library         FakerLibrary         locale=pt_BR
+=======
+# Resource        ../elements/loginElements.robot
+# Resource        ../../usuarioDN/usuario.robot
+Resource        ../elements/usuariosElements.robot
+Resource        loginSuport.robot
+Library         FakerLibrary
+>>>>>>> ce8f27ce941c147d92aeaa4389dbcc7ba7e780bb
 
 *** Keywords ***
 
@@ -35,6 +43,7 @@ E checar tela de informações do perfil
     
 Então editar campo regional, perfil de menu e linhas de serviço
     Click Element       locator=${Regional}
+<<<<<<< HEAD
     Wait Until Page Contains Element       locator=${Regional-Pernambuco}
     Click Element       locator=${Regional-Pernambuco} 
     Wait Until Page Does Not Contain Element    timeout=0:00:30        locator=${Tabela}   
@@ -48,5 +57,13 @@ Então editar campo regional, perfil de menu e linhas de serviço
 
 Então checar tela de cadastro
     Wait Until Page Contains         text=${Revisao}
+=======
+    Wait Until Page Contain        text=${Select-Regional}
+    Click Element       locator=${Regional-Pernambuco}    
+    Click Element       locator=${Perfil-Perfil-User}
+    Click Element       locator=${Gestor}
+    Click Element       locator=${Linha-Service}
+    Click Element       locator=${Metrologia}
+>>>>>>> ce8f27ce941c147d92aeaa4389dbcc7ba7e780bb
 
 
