@@ -9,9 +9,9 @@ ${Span-ValorPCliente}             //span[contains(.,'Valor para o cliente')]
 ${Span-RecursosCI}                //span[contains(.,'Recursos / CI')]   
 ${Span-ProcessoNegocio}           //span[contains(.,'Processo do negócio')]
 ${Loading}                        //img[contains(@class,'loading-img')]
-<<<<<<< HEAD
+
 ${Span-Usuarios}                  //span[contains(.,'Usuários')]  
 ${Btn-Colaboradores}              //span[@class='MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock'][contains(.,'Colaboradores')] 
-=======
+
 ${Span-Usuarios}                  //span[contains(.,'Usuários')]  
->>>>>>> ce8f27ce941c147d92aeaa4389dbcc7ba7e780bb
+

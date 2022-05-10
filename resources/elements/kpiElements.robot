@@ -20,3 +20,25 @@ ${Span-CTdeSTI}                 //td[@class='MuiTableCell-root MuiTableCell-body
 ${Presente}                     (//div[contains(@class,'formField')])[1]
 #
 ${Span-SusdeSTI}                //td[@class='MuiTableCell-root MuiTableCell-body cell-definition'][contains(.,'Sustentabilidade de STI')]
+
+${Span-%RIM}                    //td[@class='MuiTableCell-root MuiTableCell-body cell-definition'][contains(.,'% de Receita da Indústria (Mercado)')]
+                                    
+${Span-%RPFE}                   //td[contains(.,'% de Receita de Programas de Fomento Externos')]
+                                 
+${Span-%RSI}                    //td[contains(.,'% de Receita do Sistema Indústria')]
+                                  
+${Span-RTPDI}                   //td[contains(.,'Receita Total de P&D+I')]
+
+${Span-%RPDI}                   //td[contains(.,'% de Receita de P&D+I')]
+
+${Span-RTCT}                    //td[contains(.,'Receita Total de Consultoria em Tecnologia')]
+
+${Span-%RCT}                    //td[contains(.,'% de Receita de Consultoria em Tecnologia')]
+
+${Span-RTSM}                    //td[contains(.,'Receita Total de Serviços Metrológicos')]
+
+${Span-%RSM}                    //td[contains(.,'% de Receita de Serviços Metrológicos')]
+
+${Span-NP}                      //td[contains(.,'Número de Publicações')]
+
+${Span-NARPI}                   //td[contains(.,'Número de Aplicações para Registro de PI')]

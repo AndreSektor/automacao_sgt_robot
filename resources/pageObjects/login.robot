@@ -5,14 +5,8 @@ Resource    ../../usuarioDN/usuario.robot
 Resource    ../elements/dashboardElements.robot
 
 *** Variables ***
-<<<<<<< HEAD
 ${browser}       firefox 
 ${url}           https://qa.newsgt.isitics.com/#/     
-=======
-${browser}       firefox
-${url}           https://qa.newsgt.isitics.com/#/
-
->>>>>>> ce8f27ce941c147d92aeaa4389dbcc7ba7e780bb
 
 *** Keywords ***
 Abrir Navegador
