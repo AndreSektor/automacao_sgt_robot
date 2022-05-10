@@ -4,9 +4,9 @@ Resource    ../elements/kpiElements.robot
 Resource    ../../usuarioUO/usuarioUO.robot
 Resource    ../pageObjects/loginSuport.robot
 
-*** Variables ***
-${browser}      firefox
-${url}          https://qa.newsgt.isitics.com/#/
+# *** Variables ***
+# ${browser}      firefoxheadless
+# ${url}          https://qa.newsgt.isitics.com/#/
 
 *** Keywords ***
 Dado que estou logado como usuario UO administrador
@@ -50,9 +50,43 @@ Então entrar no indicador Receita total de STI (declaratório Futuro)
     Click Element           locator=${Futuro23}         
     Click Element           locator=${Bom}     
     Click Element           locator=${Regular}          
-    Click Element           locator=${Ruim}   
+    Click Element           locator=${Ruim}  
+    Click Element           locator=${Aumentar}
+    Click Element           locator=${Permanecer}
+    Click Element           locator=${Diminuir} 
     Click Element           locator=${Comentarios}
-    
+    Click Element           locator=${Fechar}
+
+Então entrar no indicador Custo total de STI (declaratório Presente/Futuro)   
+    Wait Until Element Is Visible           ${Span-CTdeSTI}
+    Click Element           locator=${Span-CTdeSTI}
+    Click Element           locator=${Presente}     
+    Click Element           locator=${Futuro23}
+    Click element           locator=${Futuro24}         
+    Click Element           locator=${Bom}     
+    Click Element           locator=${Regular}          
+    Click Element           locator=${Ruim}   
+    Click Element           locator=${Aumentar}
+    Click Element           locator=${Permanecer}
+    Click Element           locator=${Diminuir}
+    Click Element           locator=${Comentarios} 
+    Click Element           locator=${Fechar}
+
+Sustentabilidade de STI (declaratório Presente/Futuro)
+    Wait Until Element Is Visible           ${Span-SusdeSTI}
+    Click Element           locator=${Span-SusdeSTI}
+    Click Element           locator=${Presente}     
+    Click Element           locator=${Futuro24}
+    Click element           locator=${Futuro25}         
+    Click Element           locator=${Bom}     
+    Click Element           locator=${Regular}          
+    Click Element           locator=${Ruim}   
+    Click Element           locator=${Aumentar}
+    Click Element           locator=${Permanecer}
+    Click Element           locator=${Diminuir}
+    Click Element           locator=${Comentarios} 
+    Click Element           locator=${Fechar}
+
 
 
 

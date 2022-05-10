@@ -7,10 +7,10 @@ Resource        ../elements/loginSuportElements.robot
 Resource        ../../usuarioUO/usuarioUO.robot
 
 
-*** Variables ***
-${browser}       firefox
-${url}           https://qa.newsgt.isitics.com/#/
-${log-null}      service_log_path=${{os.path.devnull}}
+# *** Variables ***
+# ${browser}       firefox
+# ${url}           https://qa.newsgt.isitics.com/#/
+# ${log-null}      service_log_path=${{os.path.devnull}}
 
 
 *** Keywords ***

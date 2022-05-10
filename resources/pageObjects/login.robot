@@ -6,12 +6,11 @@ Resource    ../elements/dashboardElements.robot
 
 *** Variables ***
 ${browser}       firefox 
-${url}           https://qa.newsgt.isitics.com/#/
-${log-null}      service_log_path=${{os.path.devnull}}
+${url}           https://qa.newsgt.isitics.com/#/     
 
 *** Keywords ***
 Abrir Navegador
-    Open Browser      ${url}     ${browser}     ${log-null}
+    Open Browser      ${url}     ${browser}     service_log_path=${{os.path.devnull}}
 
 Fechar Navegador
     Close Browser 

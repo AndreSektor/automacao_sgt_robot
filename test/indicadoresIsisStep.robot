@@ -18,8 +18,8 @@ Cenário 1: Sucesso do Negócio
     Então devo visualizar a tela KPI List
     Então no campo Ano devemos selecionar 2019 e Aplicar
     Então entrar no indicador Receita total de STI (declaratório Futuro)
-    # Então entrar no indicador Custo total de STI (declaratório Presente/Futuro)
-    # Sustentabilidade de STI (declaratório Presente/Futuro)
+    Então entrar no indicador Custo total de STI (declaratório Presente/Futuro)
+    Sustentabilidade de STI (declaratório Presente/Futuro)
     # % de Receita da Indústria (Mercado) (declaratório Futuro)
     # % de Receita de Programas de Fomento Externos (declaratório Futuro)
     # % de Receita do Sistema Indústria (declaratório Futuro)
