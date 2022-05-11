@@ -1,6 +1,6 @@
 *** Variables ***
 ${Titulo-KPI-List}              KPI List
-${Modal-Ano}                    //div[contains(@aria-labelledby,'ano')]
+${Modal-Ano}                    //div[contains(@aria-labelledby,'ano')] 
 ${Ano-2019}                     //li[@class='MuiButtonBase-root MuiListItem-root MuiMenuItem-root MuiMenuItem-gutters MuiListItem-gutters MuiListItem-button'][contains(.,'2019')]   
 ${Btn-Aplicar}                  //button[@class='darkBlue basic-button'][contains(.,'Aplicar')]
 ${Span-RTdeSTI}                 //td[@class='MuiTableCell-root MuiTableCell-body'][contains(.,'Imagem & Reputação / Sustentabilidade Financeira')]    
@@ -15,30 +15,27 @@ ${Permanecer}                   (//span[contains(@class,'checkmark')])[5]
 ${Diminuir}                     (//span[contains(@class,'checkmark')])[6] 
 ${Comentarios}                  //textarea[contains(@class,' ')]
 ${Fechar}                       //span[@class='material-icons MuiIcon-root'][contains(.,'clear')]    
-#
+#Sucesso de negócio
 ${Span-CTdeSTI}                 //td[@class='MuiTableCell-root MuiTableCell-body cell-definition'][contains(.,'Custo total de STI')]
 ${Presente}                     (//div[contains(@class,'formField')])[1]
-#
 ${Span-SusdeSTI}                //td[@class='MuiTableCell-root MuiTableCell-body cell-definition'][contains(.,'Sustentabilidade de STI')]
-
-${Span-%RIM}                    //td[@class='MuiTableCell-root MuiTableCell-body cell-definition'][contains(.,'% de Receita da Indústria (Mercado)')]
-                                    
-${Span-%RPFE}                   //td[contains(.,'% de Receita de Programas de Fomento Externos')]
-                                 
-${Span-%RSI}                    //td[contains(.,'% de Receita do Sistema Indústria')]
-                                  
+${Span-%RIM}                    //td[@class='MuiTableCell-root MuiTableCell-body cell-definition'][contains(.,'% de Receita da Indústria (Mercado)')]                                    
+${Span-%RPFE}                   //td[contains(.,'% de Receita de Programas de Fomento Externos')]                            
+${Span-%RSI}                    //td[contains(.,'% de Receita do Sistema Indústria')]                                  
 ${Span-RTPDI}                   //td[contains(.,'Receita Total de P&D+I')]
-
 ${Span-%RPDI}                   //td[contains(.,'% de Receita de P&D+I')]
-
 ${Span-RTCT}                    //td[contains(.,'Receita Total de Consultoria em Tecnologia')]
-
 ${Span-%RCT}                    //td[contains(.,'% de Receita de Consultoria em Tecnologia')]
-
 ${Span-RTSM}                    //td[contains(.,'Receita Total de Serviços Metrológicos')]
-
 ${Span-%RSM}                    //td[contains(.,'% de Receita de Serviços Metrológicos')]
-
 ${Span-NP}                      //td[contains(.,'Número de Publicações')]
-
 ${Span-NARPI}                   //td[contains(.,'Número de Aplicações para Registro de PI')]
+#Valor para o cliente
+${Span-NTCSTI}                  //td[contains(.,'Número Total de Clientes de STI')] 
+${Span-NTCP&D+I}                //td[contains(.,'Número Total de Clientes de P&D+I')]
+${Span-NCP&D+IPE}               //td[contains(.,'Número de Clientes de P&D+I por Pesquisador Efetivo')]
+${Span-NNCP&D+I}                //td[contains(.,'Número de Novos Clientes de P&D+I')]
+${Span-TRC}                     //td[contains(.,'Taxa de retenção de clientes')]
+${Span-TDPCP&D+I}               //td[contains(.,'Taxa de Dependência do Principal Cliente de P&D+I')]
+${Span-NPMEsA}                  //td[contains(.,'Número de PMEs Atendidas')]
+${SPan-NGEA}                    //td[contains(.,'Número de Grandes Empresas Atendidas')]
