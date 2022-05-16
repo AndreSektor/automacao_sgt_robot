@@ -371,6 +371,12 @@ Então entrar no indicador Número de Grandes Empresas Atendidas (Automático)
 E clico no modal Processo de negócio    
     Click Element           locator=${Span-ProcessoNegocio}
 
+ 
+
+   
+
+
+
 
 
 

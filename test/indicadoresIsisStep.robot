@@ -53,4 +53,8 @@ Cenário 3: Processo de negócio
     [Tags]          ProcessoDeNegocio
     Dado que estou logado como usuario UO administrador
     Quando expando a aba de indicadores de ISIs
-    E clico no modal Processo de negócio    
+    E clico no modal Processo de negócio 
+    Então devo visualizar a tela KPI List   
+    Então no campo Ano devemos selecionar 2019 e Aplicar
+    Então entrar no indicador Número de propostas de Porjeto de P&D+I Submetidas
+       
