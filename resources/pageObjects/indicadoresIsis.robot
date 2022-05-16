@@ -40,9 +40,7 @@ Então no campo Ano devemos selecionar 2019 e Aplicar
 
 Então entrar no indicador Receita total de STI (Automático)
     Wait Until Element Is Visible           ${Span-RTdeSTI}
-    Click Element           locator=${Span-RTdeSTI}  
-    
-Automatico     
+    Click Element           locator=${Span-RTdeSTI}     
     Click Element           locator=${Futuro22}     
     Click Element           locator=${Futuro23}         
     Click Element           locator=${Bom}     
@@ -69,97 +67,91 @@ Então entrar no indicador Custo total de STI (Declaratório)
     Click Element           locator=${Comentarios} 
     Click Element           locator=${Fechar}
 
-Sustentabilidade de STI (Automático)
+Então entrar no indicador Sustentabilidade de STI (Automático)
     Wait Until Element Is Visible           ${Span-SusdeSTI}
     Click Element           locator=${Span-SusdeSTI}
-    Click Element           locator=${Presente}     
-    Click Element           locator=${Futuro23}
-    Click Element           locator=${Futuro24}         
+    Click Element           locator=${Futuro22}     
+    Click Element           locator=${Futuro23}         
     Click Element           locator=${Bom}     
     Click Element           locator=${Regular}          
-    Click Element           locator=${Ruim}   
+    Click Element           locator=${Ruim}  
     Click Element           locator=${Aumentar}
     Click Element           locator=${Permanecer}
-    Click Element           locator=${Diminuir}
-    Click Element           locator=${Comentarios} 
-    Click Element           locator=${Fechar}
-
-% de Receita da Indústria (Mercado) (Automático)
-    Wait Until Element Is Visible           ${Span-%RIM} 
-    Click Element           locator=${Span-%RIM}    
-    Click Element           locator=${Presente}
-    Click Element           locator=${Futuro22}
-    Click element           locator=${Futuro23}
-    Click Element           locator=${Bom}
-    Click Element           locator=${Regular}
-    Click Element           locator=${Ruim}
-    Click Element           locator=${Aumentar}
-    Click Element           locator=${Permanecer} 
-    Click Element           locator=${Diminuir}
+    Click Element           locator=${Diminuir} 
     Click Element           locator=${Comentarios}
     Click Element           locator=${Fechar}
 
-% de Receita de Programas de Fomento Externos (Automático)
+Então entrar no indicador % de Receita da Indústria (Mercado) (Automático)
+    Wait Until Element Is Visible           ${Span-%RIM} 
+    Click Element           locator=${Span-%RIM}
+    Click Element           locator=${Futuro22}     
+    Click Element           locator=${Futuro23}         
+    Click Element           locator=${Bom}     
+    Click Element           locator=${Regular}          
+    Click Element           locator=${Ruim}  
+    Click Element           locator=${Aumentar}
+    Click Element           locator=${Permanecer}
+    Click Element           locator=${Diminuir} 
+    Click Element           locator=${Comentarios}
+    Click Element           locator=${Fechar}
+      
+Então entrar no indicador % de Receita de Programas de Fomento Externos (Automático)
     Wait Until Element Is Visible           ${Span-%RPFE}    
     Click Element           locator=${Span-%RPFE}
-    Click Element           locator=${Presente}
-    Click Element           locator=${Futuro22}
-    Click Element           locator=${Futuro23}
-    Click Element           locator=${Bom}
-    Click Element           locator=${Regular}
-    Click Element           locator=${Ruim}
+    Click Element           locator=${Futuro22}     
+    Click Element           locator=${Futuro23}         
+    Click Element           locator=${Bom}     
+    Click Element           locator=${Regular}          
+    Click Element           locator=${Ruim}  
     Click Element           locator=${Aumentar}
     Click Element           locator=${Permanecer}
-    Click Element           locator=${Diminuir}
+    Click Element           locator=${Diminuir} 
     Click Element           locator=${Comentarios}
     Click Element           locator=${Fechar}
 
-% de Receita do Sistema Indústria (Automático)
+Então entrar no indicador % de Receita do Sistema Indústria (Automático)
     Wait Until Element Is Visible           ${Span-%RSI}
     Click Element           locator=${Span-%RSI}
-    Click Element           locator=${Presente}
-    Click Element           locator=${Futuro22}
-    Click Element           locator=${Futuro23}
-    Click Element           locator=${Bom}
-    Click Element           locator=${Regular}
-    Click Element           locator=${Ruim}
+    Click Element           locator=${Futuro22}     
+    Click Element           locator=${Futuro23}         
+    Click Element           locator=${Bom}     
+    Click Element           locator=${Regular}          
+    Click Element           locator=${Ruim}  
     Click Element           locator=${Aumentar}
     Click Element           locator=${Permanecer}
-    Click Element           locator=${Diminuir}
+    Click Element           locator=${Diminuir} 
     Click Element           locator=${Comentarios}
     Click Element           locator=${Fechar}
-
-Receita Total de P&D+I (Automático)
+  
+Então entrar no indicador Receita Total de P&D+I (Automático)
     Wait Until Element Is Visible           ${Span-RTPDI}  
     Click Element           locator=${Span-RTPDI}
-    Click Element           locator=${Presente}
-    Click Element           locator=${Futuro22}
-    Click Element           locator=${Futuro23}
-    Click Element           locator=${Bom}
-    Click Element           locator=${Regular}
-    Click Element           locator=${Ruim}
+    Click Element           locator=${Futuro22}     
+    Click Element           locator=${Futuro23}         
+    Click Element           locator=${Bom}     
+    Click Element           locator=${Regular}          
+    Click Element           locator=${Ruim}  
     Click Element           locator=${Aumentar}
     Click Element           locator=${Permanecer}
-    Click Element           locator=${Diminuir}
+    Click Element           locator=${Diminuir} 
     Click Element           locator=${Comentarios}
     Click Element           locator=${Fechar}
 
-% de Receita de P&D+I (Automático)
+Então entrar no indicador % de Receita de P&D+I (Automático)
     Wait Until Element Is Visible           ${Span-%RPDI}
     Click Element           locator=${Span-%RPDI}
-    Click Element           locator=${Presente}
-    Click Element           locator=${Futuro22}
-    Click Element           locator=${Futuro23}
-    Click Element           locator=${Bom}
-    Click Element           locator=${Regular}
-    Click Element           locator=${Ruim}
+    Click Element           locator=${Futuro22}     
+    Click Element           locator=${Futuro23}         
+    Click Element           locator=${Bom}     
+    Click Element           locator=${Regular}          
+    Click Element           locator=${Ruim}  
     Click Element           locator=${Aumentar}
     Click Element           locator=${Permanecer}
-    Click Element           locator=${Diminuir}
+    Click Element           locator=${Diminuir} 
     Click Element           locator=${Comentarios}
     Click Element           locator=${Fechar}
 
-Receita Total de Consultoria em Tecnologia (Automático)
+Então entrar no indicador Receita Total de Consultoria em Tecnologia (Automático)
     Wait Until Element Is Visible           ${Span-RTCT}
     Click Element           locator=${Span-RTCT}
     Click Element           locator=${Presente}
@@ -174,7 +166,7 @@ Receita Total de Consultoria em Tecnologia (Automático)
     Click Element           locator=${Comentarios}
     Click Element           locator=${Fechar}
 
-% de Receita de Consultoria em Tecnologia (Automático)
+Então entrar no indicador % de Receita de Consultoria em Tecnologia (Automático)
     Wait Until Element Is Visible           ${Span-%RCT}
     Click Element           locator=${Span-%RCT}
     Click Element           locator=${Presente}
@@ -189,7 +181,7 @@ Receita Total de Consultoria em Tecnologia (Automático)
     Click Element           locator=${Comentarios}
     Click Element           locator=${Fechar}
 
-Receita Total de Serviços Metrológicos (Automático)
+Então entrar no indicador Receita Total de Serviços Metrológicos (Automático)
     Wait Until Element Is Visible           ${Span-RTSM}
     Click Element           locator=${Span-RTSM}
     Click Element           locator=${Presente}
@@ -204,7 +196,7 @@ Receita Total de Serviços Metrológicos (Automático)
     Click Element           locator=${Comentarios}
     Click Element           locator=${Fechar}
 
-% de Receita de Serviços Metrológicos (Automático)
+Então entrar no indicador % de Receita de Serviços Metrológicos (Automático)
     Wait Until Element Is Visible           ${Span-%RSM}
     Click Element           locator=${Span-%RSM}
     Click Element           locator=${Presente}
@@ -219,7 +211,7 @@ Receita Total de Serviços Metrológicos (Automático)
     Click Element           locator=${Comentarios}
     Click Element           locator=${Fechar}
 
-Número de Publicações (Declaratório)
+Então entrar no indicador Número de Publicações (Declaratório)
     Wait Until Element Is Visible           ${Span-NP}
     Click Element           locator=${Span-NP}
     Click Element           locator=${Presente}
@@ -234,7 +226,7 @@ Número de Publicações (Declaratório)
     Click Element           locator=${Diminuir}
     Click Element           locator=${Comentarios}
     Click Element           locator=${Fechar}
-Número de Aplicações para Registro de PI (Declaratório)
+Então entrar no indicador Número de Aplicações para Registro de PI (Declaratório)
     Wait Until Element Is Visible           ${Span-NARPI}
     Click Element           locator=${Span-NARPI}
     Click Element           locator=${Presente}
@@ -269,6 +261,118 @@ Então entrar no indicador Número Total de Clientes de STI (Automático)
     Click Element           locator=${Diminuir}
     Click Element           locator=${Comentarios}
     Click Element           locator=${Fechar}
+
+Então entrar no indicador Número Total de Clientes de P&D+I (Automático)
+    Wait Until Element Is Visible           ${Span-NTCP&D+I}
+    Click Element           locator=${Span-NTCP&D+I}
+    Click Element           locator=${Presente}
+    Click Element           locator=${Futuro22}
+    Click Element           locator=${Futuro23}
+    Click Element           locator=${Bom}
+    Click Element           locator=${Regular}
+    Click Element           locator=${Ruim}
+    Click Element           locator=${Aumentar}
+    Click Element           locator=${Permanecer}
+    Click Element           locator=${Diminuir}
+    Click Element           locator=${Comentarios}
+    Click Element           locator=${Fechar}
+
+Então entrar no indicador Número de Clientes de P&D+I por Pesquisador Efetivo (Automático)
+    Wait Until Element Is Visible           ${Span-NCP&D+IPE}
+    Click Element           locator=${Span-NCP&D+IPE}
+    Click Element           locator=${Presente}
+    Click Element           locator=${Futuro22}
+    Click Element           locator=${Futuro23}
+    Click Element           locator=${Bom}
+    Click Element           locator=${Regular}
+    Click Element           locator=${Ruim}
+    Click Element           locator=${Aumentar}
+    Click Element           locator=${Permanecer}
+    Click Element           locator=${Diminuir}
+    Click Element           locator=${Comentarios}
+    Click Element           locator=${Fechar}    
+
+Então entrar no indicador Número de Novos Clientes de P&D+I (Automático)
+    Wait Until Element Is Visible           ${Span-NNCP&D+I}
+    Click Element           locator=${Span-NNCP&D+I}
+    Click Element           locator=${Presente}
+    Click Element           locator=${Futuro22}
+    Click Element           locator=${Futuro23}
+    Click Element           locator=${Bom}
+    Click Element           locator=${Regular}
+    Click Element           locator=${Ruim}
+    Click Element           locator=${Aumentar}
+    Click Element           locator=${Permanecer}
+    Click Element           locator=${Diminuir}
+    Click Element           locator=${Comentarios}
+    Click Element           locator=${Fechar}
+
+Então entrar no indicador Taxa de retenção de clientes (Automático)
+    Wait Until Element Is Visible           ${Span-TRC}
+    Click Element           locator=${Span-TRC}
+    Click Element           locator=${Presente}
+    Click Element           locator=${Futuro22}
+    Click Element           locator=${Futuro23}
+    Click Element           locator=${Bom}
+    Click Element           locator=${Regular}
+    Click Element           locator=${Ruim}
+    Click Element           locator=${Aumentar}
+    Click Element           locator=${Permanecer}
+    Click Element           locator=${Diminuir}
+    Click Element           locator=${Comentarios}
+    Click Element           locator=${Fechar}
+
+Então entrar no indicador Taxa de Dependência do Principal Cliente de P&D+I (Automático)
+    Wait Until Element Is Visible           ${Span-TDPCP&D+I}
+    Click Element           locator=${Span-TDPCP&D+I}
+    Click Element           locator=${Presente}
+    Click Element           locator=${Futuro22}
+    Click Element           locator=${Futuro23}
+    Click Element           locator=${Bom}
+    Click Element           locator=${Regular}
+    Click Element           locator=${Ruim}
+    Click Element           locator=${Aumentar}
+    Click Element           locator=${Permanecer}
+    Click Element           locator=${Diminuir}
+    Click Element           locator=${Comentarios}
+    Click Element           locator=${Fechar}
+
+Então entrar no indicador Número de PMEs Atendidas (Automático)
+    Wait Until Element Is Visible           ${Span-NPMEsA}
+    Click Element           locator=${Span-NPMEsA}
+    Click Element           locator=${Presente}
+    Click Element           locator=${Futuro22}
+    Click Element           locator=${Futuro23}
+    Click Element           locator=${Bom}
+    Click Element           locator=${Regular}
+    Click Element           locator=${Ruim}
+    Click Element           locator=${Aumentar}
+    Click Element           locator=${Permanecer}
+    Click Element           locator=${Diminuir}
+    Click Element           locator=${Comentarios}
+    Click Element           locator=${Fechar}
+
+Então entrar no indicador Número de Grandes Empresas Atendidas (Automático)
+    Wait Until Element Is Visible           ${SPan-NGEA}
+    Click Element           locator=${SPan-NGEA}
+    Click Element           locator=${Presente}
+    Click Element           locator=${Futuro22}
+    Click Element           locator=${Futuro23}
+    Click Element           locator=${Bom}
+    Click Element           locator=${Regular}
+    Click Element           locator=${Ruim}
+    Click Element           locator=${Aumentar}
+    Click Element           locator=${Permanecer}
+    Click Element           locator=${Diminuir}
+    Click Element           locator=${Comentarios}
+    Click Element           locator=${Fechar}
+
+#Processo de negócio
+E clico no modal Processo de negócio    
+    Click Element           locator=${Span-ProcessoNegocio}
+
+
+
 
 
 

@@ -39,3 +39,13 @@ ${Span-TRC}                     //td[contains(.,'Taxa de retenção de clientes'
 ${Span-TDPCP&D+I}               //td[contains(.,'Taxa de Dependência do Principal Cliente de P&D+I')]
 ${Span-NPMEsA}                  //td[contains(.,'Número de PMEs Atendidas')]
 ${SPan-NGEA}                    //td[contains(.,'Número de Grandes Empresas Atendidas')]
+#Processo de negócio            
+${Span-NPPP&D+IS}               //td[contains(.,'Número de Propostas de Projeto de P&D+I Submetidas')]
+${Span-NPPP&D&ISPE}             //td[contains(.,'Número de Propostas de Projeto de P&D&I Submetidas por Pesquisador Efetivo')]
+${Span-NPP&D+IC}                //td[contains(.,'Número de Projetos de P&D+I Contratados')]
+${Span-TSAPP&D+I}               //td[contains(.,'Taxa de Sucesso na Aquisição de Projetos de P&D+I')]
+${Span-NPP&D+IE}                //td[contains(.,'Número de Projetos de P&D+I em Execução')]
+${Span-RMP&D+IPP&D+I}           //td[contains(.,'Receita Média de P&D+I por Projeto de P&D+I')]
+${Span-RMP&D+IPE}               //td[contains(.,'Receita Média de P&D+I por Pesquisador Efetivo')]
+${Span-% PP&D+IEP}              //td[contains(.,'% de Projetos de P&D+I entregues no Prazo')]
+${Span-NSC}                     //td[contains(.,'Nível de Satisfação do Cliente')]
