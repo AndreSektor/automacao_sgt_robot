@@ -3,7 +3,6 @@ Resource            ../resources/pageObjects/loginSuport.robot
 Resource            ../resources/pageObjects/indicadoresIsis.robot
 Test Setup          Abrir Navegador
 Test Teardown       Fechar Navegador
-Documentation       ../resources/pageObjects/indicadoresIsis.robot
 
 *** Test Cases ***
 #  Funcionalidade: Visualizar indicadores ISIs
