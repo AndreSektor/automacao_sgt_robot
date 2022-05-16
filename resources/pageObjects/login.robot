@@ -6,7 +6,8 @@ Resource    ../elements/dashboardElements.robot
 
 *** Variables ***
 ${browser}       firefox 
-${url}           https://qa.newsgt.isitics.com/#/     
+${url}           https://qa.newsgt.isitics.com/#/   
+  
 
 *** Keywords ***
 Abrir Navegador

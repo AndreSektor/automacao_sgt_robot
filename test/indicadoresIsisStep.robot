@@ -3,6 +3,7 @@ Resource            ../resources/pageObjects/loginSuport.robot
 Resource            ../resources/pageObjects/indicadoresIsis.robot
 Test Setup          Abrir Navegador
 Test Teardown       Fechar Navegador
+Documentation       ../resources/pageObjects/indicadoresIsis.robot
 
 *** Test Cases ***
 #  Funcionalidade: Visualizar indicadores ISIs
@@ -31,3 +32,19 @@ Cenário 1: Sucesso do Negócio
     % de Receita de Serviços Metrológicos (Automático)
     Número de Publicações (Declaratório)
     Número de Aplicações para Registro de PI (Declaratório)
+
+Cenário 2: Valor para o cliente 
+    [Tags]      ValorParaOCliente
+    Dado que estou logado como usuario UO administrador
+    Quando expando a aba de indicadores de ISIs
+    E clico no modal Valor para o cliente
+    Então devo visualizar a tela KPI List   
+    Então no campo Ano devemos selecionar 2019 e Aplicar
+    Então entrar no indicador Número Total de Clientes de STI (Automático)
+    # Então entrar no indicador Número Total de Clientes de P&D+I (Automático)    
+    # Então entrar no indicador Número de Clientes de P&D+I por Pesquisador Efetivo (Automático)
+    # Então entrar no indicador Número de Novos Clientes de P&D+I (Automático)
+    # Então entrar no indicador Taxa de retenção de clientes (Automático)
+    # Então entrar no indicador Taxa de Dependência do Principal Cliente de P&D+I (Automático)
+    # Então entrar no indicador Número de PMEs Atendidas (Automático)
+    # Então entrar no indicador Número de Grandes Empresas Atendidas (Automático)

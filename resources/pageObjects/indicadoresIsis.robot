@@ -18,7 +18,7 @@ Dado que estou logado como usuario UO administrador
 
 Quando expando a aba de indicadores de ISIs 
     Então devo ser redirecionado para o menu Dashboard de Atendimentos
-    Wait Until Page Does Not Contain Element    timeout=0:00:30    locator=${Loading} 
+    Wait Until Page Does Not Contain Element    timeout=0:00:30    locator=${Loading}  
     Click Element                            locator=${Btn-Sanduich}
     Click Element                               locator=${Btn-Indicadores-ISIs}
 
@@ -40,7 +40,9 @@ Então no campo Ano devemos selecionar 2019 e Aplicar
 
 Então entrar no indicador Receita total de STI (Automático)
     Wait Until Element Is Visible           ${Span-RTdeSTI}
-    Click Element           locator=${Span-RTdeSTI}
+    Click Element           locator=${Span-RTdeSTI}  
+    
+Automatico     
     Click Element           locator=${Futuro22}     
     Click Element           locator=${Futuro23}         
     Click Element           locator=${Bom}     
@@ -247,7 +249,27 @@ Número de Aplicações para Registro de PI (Declaratório)
     Click Element           locator=${Diminuir}
     Click Element           locator=${Comentarios}
     Click Element           locator=${Fechar}
-    
+
+#Valor para o cliente    
+E clico no modal Valor para o cliente  
+    Click Element       locator=${Span-ValorPCliente}
+
+Então entrar no indicador Número Total de Clientes de STI (Automático)  
+    Wait Until Page Does Not Contain Element    timeout=0:00:30    locator=${Loading}
+    Wait Until Element Is Visible           ${Span-NTCSTI}
+    Click Element           locator=${Span-NTCSTI}
+    Click Element           locator=${Presente}
+    Click Element           locator=${Futuro22}
+    Click Element           locator=${Futuro23}
+    Click Element           locator=${Bom}
+    Click Element           locator=${Regular}
+    Click Element           locator=${Ruim}
+    Click Element           locator=${Aumentar}
+    Click Element           locator=${Permanecer}
+    Click Element           locator=${Diminuir}
+    Click Element           locator=${Comentarios}
+    Click Element           locator=${Fechar}
+
 
 
 
